@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TicTacToe</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <h1>Tic Tac Toe</h1>
+        <label id="playerX">Player X score</label>
+        <label id="playerO">Player O score</label>
+        <p id="text1">0</p>
+        <p id="text2">0</p>
+        <div id="boxes" class="board">
+            <button onClick=InitializeGame(this.id) id="box1" class="symbol"></button>
+            <button onClick=InitializeGame(this.id) id="box2" class="symbol"></button>
+            <button onClick=InitializeGame(this.id) id="box3" class="symbol"></button>
+            <br>
+            <button onClick=InitializeGame(this.id) id="box4" class="symbol"></button>
+            <button onClick=InitializeGame(this.id) id="box5" class="symbol"></button>
+            <button onClick=InitializeGame(this.id) id="box6" class="symbol"></button>
+            <br>
+            <button onClick=InitializeGame(this.id) id="box7" class="symbol"></button>
+            <button onClick=InitializeGame(this.id) id="box8" class="symbol"></button>
+            <button onClick=InitializeGame(this.id) id="box9" class="symbol"></button>
+        </div>
+        
+        <br>
+        <p id="WhoWins"></p>
+        <button id="resetBtn" onClick="resetGame()" type="reset">Reset</button>
+        <button id="continueBtn" onClick="continueGame()" type="continue">Continue</button>
+            
+        
+        <script src="TicTacToe.js"></script>
+    </body>
+</html>
